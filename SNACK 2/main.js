@@ -72,11 +72,16 @@ console.log(students)
 //ritornando solo gli elementi con la chiave "name" e che siano maiuscole [.toUpperCase()] 
 const upperName = students.map((el) =>{
 
-    return el.name.toUpperCase()
+    return {
+        id: el.id,
+        name: el.name.toUpperCase(),
+        grades: el.grades,
+    }
 
 });
 
 console.log(upperName)
+
 
 
 

@@ -21,6 +21,13 @@ const vipGuests = [
     'Maneskin'
 ]
 
+
+
+
+//
+// ESECUZIONE CON CICLO for
+//
+
 //creo due variabili per il tavolo e il posto a sedere
 let table = 'Tavolo VIP' ;
 let sit = 0 ;
@@ -49,3 +56,25 @@ for(let i = 0; i < vipGuests.length; i++){
 }
 
 console.log(assignGuests)
+
+
+
+
+//
+// ESECUZIONE CON map
+//
+
+//creo una variabile che mi permetta di rimappare i singoli elementi del primo array
+//specificando sia l'elemento che mi interessa "el"
+//sia l'indice "i" per l'assegnazione del posto
+//ritornandolo come oggetto, incrementando "i" di 1 (i + 1)
+const newVipGuests = vipGuests.map((el, i) => {
+
+    return {
+        guestTable: 'Table VIP',
+        guestName: el,
+        guestSit: i + 1,
+    }
+})
+
+console.log(newVipGuests)
