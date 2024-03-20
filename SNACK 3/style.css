@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./2938991-60335788-2560-1440.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
