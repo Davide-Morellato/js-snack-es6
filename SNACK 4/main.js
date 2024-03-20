@@ -77,7 +77,7 @@ console.log(clubs)
 //creo un nuovo array con l'utilizzo di map
 const newClubs = clubs.map((club) => {
 
-    //destrutturizzazione dell'oggetto con soli nome e falli subiti
+    //destrutturizzazione dell'oggetto con soli nome e falli
     const {team, foulsDrawn} = club
 
     //return nome e falli
